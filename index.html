@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="rect">
+
+        <div id="base">
+          <p>Base</p>
+        <div class="container">
+        <div class="kvadrat">
+          <img class="baza" src="assets/Base 1.png" alt="Base 1">
+        </div>
+        <div class="kvadrat2">
+          <img class="baza" src="assets/Base 2.png" alt="Base 2">
+          </div>
+          <div class="kvadrat3">
+            </div>
+            <div class="kvadrat4">
+              </div>
+        </div>
+      </div>
+
+        <hr id="prva">
+
+        <div id="basefin">
+          <p>Base finish</p>
+          <div class="container">
+            <div>
+              <div class="krug" style="background-color:#0D0D0D;"></div>
+              <div class="krug" style="background-color:#00334D;"></div>
+              <div class="krug" style="background-color:#FFFFFF;"></div>
+              <div class="krug" style="background-color:#B7B7B7;"></div>
+              <div class="krug" style="background-color:#717184;"></div>
+              <div class="krug" style="background-color:#BCB5AF;"></div>
+              <div class="krug" style="background-color:#0068B4;"></div>
+            </div>
+            <div>
+              <div class="krug" style="background-color:#6D6456;"></div>
+              <div class="krug" style="background-color:#D0D1B0;"></div>
+              <div class="krug" style="background-color:#414042;"></div>
+              <div class="krug" style="background-color:#7A7A7A;"></div>
+              <div class="krug" style="background-color:#CEDBBC;"></div>
+            </div>
+          </div>
+        </div>
+
+      <hr id="prva">
+
+      <div id="basefin1">
+        <p>Board</p>
+      <div class="container">
+      <div class="kvadrat">
+      <img class="mat" src="assets/mat1.png" alt="Material 1">
+      </div>
+      <div class="kvadrat2">
+        <img class="mat" src="assets/mat2.png" alt="Material 2">
+        </div>
+        <div class="kvadrat3">
+          <img class="mat" src="assets/mat3.png" alt="Material 3">
+          </div>
+          <div class="kvadrat4">
+            <img class="mat" src="assets/mat4.png" alt="Material 4">
+            </div>
+      </div>
+    </div>
+
+      <hr id="prva">
+      <div id="basefin2">
+        <p>Seating</p>
+      <div class="container">
+      <div class="kvadrat">
+        <img class="mat" src="assets/mat1.png" alt="Material 1">
+      </div>
+      <div class="kvadrat2">
+        <img class="mat" src="assets/mat2.png" alt="Material 2">
+        </div>
+        <div class="kvadrat3">
+          <img class="mat" src="assets/mat3.png" alt="Material 3">
+          </div>
+          <div class="kvadrat4">
+            <img class="mat" src="assets/mat4.png" alt="Material 4">
+            </div>
+      </div>
+    </div>
+
+      <hr id="prva">
+      <div id="basefin3">
+        <p>Covering</p>
+      <div class="container">
+      <div class="kvadrat">
+        <img class="mat" src="assets/mat5.png" alt="Material 1">
+      </div>
+      <div class="kvadrat2">
+        <img class="mat" src="assets/mat6.png" alt="Material 2">
+        </div>
+        <div class="kvadrat3">
+          <img class="mat" src="assets/mat7.png" alt="Material 3">
+          </div>
+          <div class="kvadrat4">
+            <img class="mat" src="assets/mat8.png" alt="Material 4">
+            </div>
+          </div>
+        </div>
+
+
+      <hr id="prva">
+      <div id="basefin4">
+        <p>Back</p>
+      <div class="container">
+      <div class="kvadrat">
+        <img class="mat" src="assets/mat1.png" alt="Material 1">
+      </div>
+      <div class="kvadrat2">
+        <img class="mat" src="assets/mat2.png" alt="Material 2">
+        </div>
+        <div class="kvadrat3">
+          <img class="mat" src="assets/mat3.png" alt="Material 3">
+          </div>
+          <div class="kvadrat4">
+            <img class="mat" src="assets/mat4.png" alt="Material 4">
+            </div>
+      </div>
+    </div>
+      <hr id="prva">
+      <p id="Selling">Selling price of your current configuration: <br> 300 EUR </p>
+      <div class="container4">
+      <div class="kvadrat5">
+        <p>Previous</p>
+      </div>
+      <div class="kvadrat5">
+        <p>Next</p>
+      </div>
+    </div>
+        </div>
+
+
+        <a-scene embedded>
+          <a-assets>
+            <a-asset-item id="assem3-gltf" src="assets/Assem3.gltf"></a-asset-item>
+          </a-assets>
+
+          <a-entity position="0.0 0.0 -3.0">
+
+            <a-plane position="0.0 0.0 0.0"
+                     rotation="-90 0 0"
+                     width="40"
+                     height="40"
+                     material="opacity: 0.0; transparent: true"></a-plane>
+
+            <a-entity gltf-model="#assem3-gltf"
+                      scale="2.0 2.0 2.0"
+                      position="1.0 0.0 0.0"
+                      color="#EF2D5E"
+                      shadow="cast:true; receive:true;"
+                      rotation="90 270 0"></a-entity>
+
+              <a-entity  light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+
+              <a-sky src="assets/sky.jpg"></a-sky>
+
+          </a-entity>
+        </a-scene>
+</body>
+</html>
